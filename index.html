@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Webhooks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Webhook Manager</h1>
+    <div>
+        <label for="webhook-url">Webhook URL</label>
+        <input type="text" id="webhook-url">
+    </div>
+    <div>
+        <label for="message">Message:</label>
+        <input type="text" id="message">
+    </div>
+    <div>
+        <label for="image">Imagem:</label>
+        <input type="file" id="image">
+    </div>
+    <div>
+        <button onclick="sendMessage()">Send Message</button>
+    </div>
+    <div>
+        <button onclick="chooseWebhook('https://discord.com/api/webhooks/1239210643224264834/LdPo0xx9-XGTP7bGJngLYTK7pw8objjPjoRxPem2_hPyiOlJzXsQ9X09-FGXd2VxlF5V')">Notice Webhook</button>
+        <button onclick="chooseWebhook('https://discord.com/api/webhooks/1239209575647809676/ttABE5_sWuXGKK3Zh8LHsn_PtfsoIyYZdoVwb5C32fIg8-vfxTWEjYgZJZ1n4L-OoHYj')">Chat Webhook</button>
+        <button onclick="chooseWebhook('https://discord.com/api/webhooks/1239211004672479293/gQco2V_YWU3C3rAs5NpmTUAYMt3tt-0Ics0PISDdsN44w_81puiN6Hm4kMoQjAUYsJF3')">Leaked Webhook</button>
+        <button onclick="chooseWebhook('https://discord.com/api/webhooks/1239214663565312000/GJ1F649--XzCBRdfs0UnE-7mF6Ve8epjqeMIEIM95sYhVpXFsLT_a5zZvSJArti8qwP-')">AutoFarm Webhook</button>
+        <button onclick="chooseWebhook('https://discord.com/api/webhooks/1239218889997553785/5JDqrkhOxCwuUtmp66VcwIw6-mF-udt_27z_3W4JbpB0QDoYv0n2_N0w9Xq0Br7ROf_0')">AutoFarm Webhook Mobile</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
